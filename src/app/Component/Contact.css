@@ -1,0 +1,107 @@
+
+  /* ContactForm section styles */
+  .contact-section {
+    padding: 3rem 0;
+    background-color: #181818;
+  }
+  
+  .contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #181818;
+  }
+  
+  .contact-title-wrapper {
+    grid-column: span 7;
+    place-self: center;
+    text-align: center;
+  }
+  
+  @media (min-width: 640px) {
+    .contact-title-wrapper {
+      text-align: left;
+    }
+  }
+  
+  .contact-title {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #9d4edd, #f72585);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  @media (min-width: 640px) {
+    .contact-title {
+      font-size: 3.75rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .contact-title {
+      font-size: 4.5rem;
+    }
+  }
+  
+  .contact-form {
+    max-width: 32rem;
+    margin: 0 auto;
+    border-color: #a3b9ae;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-input,
+  .contact-textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    background-color: #181818;
+    color: white;
+    outline: none;
+  }
+  
+  .contact-input:focus,
+  .contact-textarea:focus {
+    ring-width: 2px;
+    ring-color: #3b82f6;
+  }
+  
+  .contact-btn {
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    place-self: center;
+    width: 100%;
+    border-radius: 9999px;
+    margin-right: 1rem;
+    background: linear-gradient(to bottom right, #3b82f6, #9333ea, #ec4899);
+    color: black;
+  }
+  
+  .contact-btn:hover {
+    background-color: #f1f5f9;
+  }
+  
+  /* Footer section styles */
+.footer {
+    background-color: #181818;
+    color: white;
+    padding: 2rem 0; /* py-8 */
+  }
+  
+  .footer-container {
+    max-width: 1200px; /* container */
+    margin: 0 auto; /* mx-auto */
+    display: flex; /* flex */
+    flex-direction: column; /* flex-col */
+    justify-content: space-between; /* justify-between */
+    align-items: center; /* items-center */
+  }
+  
+  @media (min-width: 768px) {
+    .footer-container {
+      flex-direction: row; /* md:flex-row */
+    }
+}

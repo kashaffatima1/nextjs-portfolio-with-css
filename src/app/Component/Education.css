@@ -1,0 +1,81 @@
+/* styles/Education.css */
+.education-section {
+    padding: 3rem 0;
+    background-color: #181818;
+  }
+  
+  .education-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .education-title-wrapper {
+    grid-column: span 7;
+    place-self: center;
+    text-align: center;
+  }
+  
+  @media (min-width: 640px) {
+    .education-title-wrapper {
+      text-align: left;
+    }
+  }
+  
+  .education-title {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #9d4edd, #f72585);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  @media (min-width: 640px) {
+    .education-title {
+      font-size: 3.75rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .education-title {
+      font-size: 4.5rem;
+    }
+  }
+  
+  .education-grid {
+    display: grid;
+    background-color: #121212;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  @media (min-width: 640px) {
+    .education-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .education-grid {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+  
+  .education-card {
+    background-color: #181818;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .education-degree {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: white;
+  }
+  
+  .education-description {
+    color: #000000;
+    margin-top: 0.5rem;
+  }
+  

@@ -1,0 +1,113 @@
+.herosection-container {
+    display: grid;
+    background-color: #181818;
+    grid-template-columns: 1fr;
+    padding-top: 1.75rem; /* pt-7 */
+  }
+  
+  @media (min-width: 640px) {
+    .herosection-container {
+      grid-template-columns: repeat(12, 1fr); /* sm:grid-cols-12 */
+    }
+  }
+  
+  .herosection-text {
+    grid-column: span 7; /* col-span-7 */
+    place-self: center;
+    text-align: center;
+  }
+  
+  @media (min-width: 640px) {
+    .herosection-text {
+      text-align: left; /* sm:text-left */
+    }
+  }
+  
+  .herosection-title {
+    color: white;
+    margin-bottom: 1rem; /* mb-4 */
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: 800; /* font-extrabold */
+  }
+  
+  @media (min-width: 640px) {
+    .herosection-title {
+      font-size: 3rem; /* sm:lg:text-4xl */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .herosection-title {
+      font-size: 3.75rem; /* lg:text-6xl */
+    }
+  }
+  
+  .herosection-desc {
+    color: #adb7be; /* text-[#adb7be] */
+    font-size: 1rem; /* text-base */
+    margin-bottom: 1.5rem; /* mb-6 */
+  }
+  
+  @media (min-width: 640px) {
+    .herosection-desc {
+      font-size: 1.125rem; /* sm:text-lg */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .herosection-desc {
+      font-size: 1.25rem; /* lg:text-xl */
+    }
+  }
+  
+  .herosection-btn {
+    padding: 0.75rem 1.5rem; /* px-6 py-3 */
+    width: 100%; /* w-full */
+    border-radius: 9999px; /* rounded-full */
+    margin-right: 1rem; /* mr-4 */
+    background: linear-gradient(to bottom right, #3b82f6, #9333ea, #ec4899); /* bg-gradient-to-br */
+    color: black; /* text-black */
+  }
+  
+  .herosection-btn:hover {
+    background-color: #f1f5f9; /* hover:bg-slate-200 */
+  }
+  
+  @media (min-width: 640px) {
+    .herosection-btn {
+      width: auto; /* sm:w-fit */
+    }
+  }
+  
+  .herosection-btn-secondary {
+    margin-top: 1rem; /* mt-3 */
+  }
+  
+  .herosection-img {
+    grid-column: span 5; /* col-span-5 */
+    justify-content: center;
+    align-items: center;
+    grid-row: 3px;
+    place-self: center;
+    margin-top: 1rem; /* mt-4 */
+  }
+  
+  @media (min-width: 1024px) {
+    .herosection-img {
+      margin-top: 0; /* lg:mt-0 */
+    }
+  }
+  
+  .herosection-img-wrapper {
+    width: 50%; /* md:w-1/2 */
+    margin-top: 2rem; /* mt-8 */
+    display: flex;
+    justify-content: center; /* flex justify-center */
+  }
+  
+  @media (min-width: 1024px) {
+    .herosection-img-wrapper {
+      margin-top: 0; /* md:mt-0 */
+    }
+  }
+  
